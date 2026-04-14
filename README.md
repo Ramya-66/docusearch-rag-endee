@@ -12,14 +12,25 @@ Upload any PDF and ask questions about it. Get AI-generated answers grounded in 
 
 ## System Architecture
 User Query 
-↓ 
+
+  ↓ 
+
 [Streamlit UI] 
-↓
-[Sentence Transformers - all-MiniLM-L6-v2] ← generates embeddings ↓ 
+
+  ↓
+
+[Sentence Transformers - all-MiniLM-L6-v2] ← generates embeddings 
+
+  ↓ 
+
 [Endee Vector DB] ← stores & retrieves top-k relevant chunks 
-↓ 
+  
+  ↓ 
+
 [Ollama llama3.2] ← generates final answer 
-↓ 
+
+  ↓ 
+
 Answer displayed to User
 
 ## How Endee is Used
